@@ -15,10 +15,9 @@ variables:
 steps:
 - script: dotnet build --configuration $(buildConfiguration)
   displayName: 'dotnet build $(buildConfiguration)'
-- task: VSTest@2
+- task: DotNetCoreCLI@2
+  displayName: Test
   inputs:
-    testSelector: 'testAssemblies' # Options: testAssemblies, testPlan, testRun
-    testAssemblyVer2: | # Required when testSelector == TestAssemblies
-      **\*test*.dll
-      !**\*.UnitTest.dll
-      !**\obj\**
+    command: test
+    projects: '**/*UnitTest*.csproj'
+    arguments: '--configuration $(BuildConfiguration)'
