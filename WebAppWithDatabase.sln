@@ -11,8 +11,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApp.UnitTest", "WebApp.U
 EndProject
 Project("{151D2E53-A2C4-4D7D-83FE-D05416EBD58E}") = "AzureResourceGroupDeployment", "AzureResourceGroupDeployment\AzureResourceGroupDeployment.deployproj", "{BFCF79CD-CFBD-4E44-A79F-B5C0E95F0F49}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SeleniumUiTests", "SeleniumUiTests\SeleniumUiTests.csproj", "{655A2079-A99C-4539-99CC-FD772A0B10BA}"
-EndProject
+<!--Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SeleniumUiTests", "SeleniumUiTests\SeleniumUiTests.csproj", "{655A2079-A99C-4539-99CC-FD772A0B10BA}"
+EndProject-->
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
